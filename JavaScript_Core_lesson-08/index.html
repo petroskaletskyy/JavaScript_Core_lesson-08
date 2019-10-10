@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Events</title>
+<style>
+.margin {
+	margin-top: 15px;
+}
+
+#crossing ul li {
+	display: list-item;
+}
+
+#crossing.expand ul li {
+	display: none;
+}
+
+#crossing ul li#control {
+	display: list-item;
+	margin-top: 15px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+	<div id='text' style='visibility: visible'>This text will fade
+		when you click the button</div>
+	<button id='hide_text' class='margin'>Hide div</button>
+
+	<br>
+
+	<button id='hide_button' class='margin'>Press to hide button</button>
+
+	<div class='margin'>
+		<ul id='crossing'>
+			<li id='control'>Університет:</li>
+			<ul>
+				<li>кафедра ІСМ</li>
+				<li>кафедра ЕСМ</li>
+				<li>кафедра політології</li>
+			</ul>
+		</ul>
+	</div>
+
+
+	<script src='event.js'></script>
+</body>
+</html>
